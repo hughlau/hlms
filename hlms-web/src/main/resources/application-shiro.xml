@@ -41,6 +41,7 @@
                 /res/** = anon
                 /error/** = anon
                 /login = anon
+                /register.jsp=anon
                 /**=authc
             </value>
         </property>

@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.hl.entity.BaseEntityMap;
+import com.hl.sqlutil.BaseEntityMap;
 import com.hl.sqlplugin.PageView;
 
 public class BaseController {

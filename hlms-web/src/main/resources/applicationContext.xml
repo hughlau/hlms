@@ -63,4 +63,21 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.hl.mapper" />
 	</bean>
+	
+	<bean id="logaspect" class="com.hl.aop.ServiceInterceptor" />
+	
+	<aop:config>
+	
+		<aop:pointcut expression="execution(* com.hl.service.*.*(..))" id="pc_log"/>
+		
+		<aop:aspect ref="logaspect">
+		
+			<aop:before method="before" pointcut-ref="pc_log"/>
+        	<aop:after-returning method="afterReturning" pointcut-ref="pc_log" returning="retVal"/>
+        	<aop:around method="around" pointcut-ref="pc_log"/>
+        	<aop:after method="after" pointcut-ref="pc_log"/>
+        	<aop:after-throwing method="afterThrowing" arg-names="args" throwing="ex" pointcut-ref="pc_log" />
+		
+		</aop:aspect>
+	</aop:config>
 </beans>

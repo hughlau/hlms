@@ -24,11 +24,7 @@
 		  <artifactId>hlms-entity</artifactId>
 		  <version>0.0.1-SNAPSHOT</version>
 	</dependency>
-	<dependency>
-		<groupId>com.hl</groupId>
-		  <artifactId>hlms-common</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
-	</dependency>
+
   <!-- Spring -->
 	<dependency>
 		<groupId>org.springframework</groupId>
@@ -109,6 +105,16 @@
             <version>1</version>
         </dependency>
 	
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjweaver</artifactId>
+		<version> 1.6.11</version>
+	</dependency>
+	<dependency>
+	    <groupId>commons-codec</groupId>
+	    <artifactId>commons-codec</artifactId>
+	    <version>1.8</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

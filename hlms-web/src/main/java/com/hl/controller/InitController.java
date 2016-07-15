@@ -10,6 +10,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/")
@@ -43,11 +44,17 @@ public class InitController {
             request.removeAttribute("error");
         } catch (Exception e) {
             e.printStackTrace();
-            request.setAttribute("error", "登录异常，请联系管理员！");
+            request.setAttribute("error", "系统异常，请联系管理员！");
             return "/login";
         }
         
         return "redirect:index";
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="regiter",method=RequestMethod.POST,produces="text/html;charset=utf-8")
+	public String register(String username,String password,String email,String phone){
+		return "";
 	}
 	
 	@RequestMapping(value="index")

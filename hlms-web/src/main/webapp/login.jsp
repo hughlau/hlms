@@ -12,43 +12,7 @@
 
 <head>
 
-	<meta charset="utf-8" />
-
-	<title>Metronic | Login Page</title>
-
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-	<meta content="" name="description" />
-
-	<meta content="" name="author" />
-
-	<!-- BEGIN GLOBAL MANDATORY STYLES -->
-
-	<link href="res/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-	<link href="res/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
-
-	<link href="res/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-
-	<link href="res/css/style-metro.css" rel="stylesheet" type="text/css"/>
-
-	<link href="res/css/style.css" rel="stylesheet" type="text/css"/>
-
-	<link href="res/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-
-	<link href="res/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
-
-	<link href="res/css/uniform.default.css" rel="stylesheet" type="text/css"/>
-
-	<!-- END GLOBAL MANDATORY STYLES -->
-
-	<!-- BEGIN PAGE LEVEL STYLES -->
-
-	<link href="res/css/login.css" rel="stylesheet" type="text/css"/>
-
-	<!-- END PAGE LEVEL STYLES -->
-
-	<link rel="shortcut icon" href="res/image/favicon.ico" />
+	<jsp:include page="common/head.jsp" />
 	<script data-main="res/js/login" src="res/lib/require.js"></script>
 </head>
 
@@ -138,9 +102,8 @@
 
 				<p>
 
-					Don't have an account yet ?&nbsp; 
 
-					<a href="javascript:;" id="register-btn" class="">用户注册</a>
+					<a href="register.jsp">用户注册</a>
 
 				</p>
 
@@ -155,15 +118,7 @@
 
 	<!-- END LOGIN -->
 
-	<!-- BEGIN COPYRIGHT -->
-
-	<div class="copyright">
-
-		2013 &copy; Metronic. Admin Dashboard Template.
-
-	</div>
-
-	<!-- END COPYRIGHT -->
+	<jsp:include page="common/footer.jsp"></jsp:include>
 
 
 	<!--[if lt IE 9]>

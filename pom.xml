@@ -13,5 +13,6 @@
     <module>hlms-net</module>
     <module>hlms-business</module>
     <module>hlms-web</module>
+    <module>hlms-dao</module>
   </modules>
 </project>
